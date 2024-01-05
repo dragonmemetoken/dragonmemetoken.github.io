@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57e513c8.css",
+    "main.js": "/static/js/main.63ee1439.js",
+    "static/js/787.41379b8c.chunk.js": "/static/js/787.41379b8c.chunk.js",
+    "static/media/logo.png": "/static/media/logo.a78307f7e9253021d80b.png",
+    "static/media/tokenomics.png": "/static/media/tokenomics.e066a3a6365f39878a06.png",
+    "static/media/telegram.png": "/static/media/telegram.d34e967218119e55660c.png",
+    "static/media/twitter.png": "/static/media/twitter.ec800d565fd941ce39af.png",
+    "static/media/etherscan.png": "/static/media/etherscan.751e138f666f0e2bfa54.png",
+    "index.html": "/index.html",
+    "main.57e513c8.css.map": "/static/css/main.57e513c8.css.map",
+    "main.63ee1439.js.map": "/static/js/main.63ee1439.js.map",
+    "787.41379b8c.chunk.js.map": "/static/js/787.41379b8c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57e513c8.css",
+    "static/js/main.63ee1439.js"
+  ]
+}
