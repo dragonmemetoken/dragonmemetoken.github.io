@@ -4,8 +4,8 @@ import {useEffect, useState} from "react";
 import icon from '../../img/logo.png';
 import twitter from '../../img/twitter.png';
 import telegram from '../../img/telegram.png';
-import etherscan from '../../img/etherscan.png';
-import tokenomics from '../../img/tokenomics.png';
+// import etherscan from '../../img/etherscan.png';
+// import tokenomics from '../../img/tokenomics.png';
 
 import nft0 from '../../img/nft/0.webp';
 import nft1 from '../../img/nft/1.webp';
@@ -42,7 +42,6 @@ function Home(props) {
 
         while(random1 === random2) {
             random2 = Math.floor(Math.random() * 20);
-            console.log(random1, random2)
         }
 
         while(random2 === random3) {
@@ -60,6 +59,7 @@ function Home(props) {
 
     useEffect(function() {
         updateNFT();
+        // eslint-disable-next-line
     }, []);
 
     return (
@@ -293,15 +293,23 @@ function Home(props) {
                         <div className="col-md-10 col-lg-9">
                             <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Price</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">30 SEI, balancing artistry and value.</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">30 SEI</p>
+                        </div>
+                    </div>
+
+                    <div className="row justify-content-center pt-3 mb-5">
+                        <div className="col-md-10 col-lg-9">
+                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Whitelist Mint</h2>
+
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 5, 2024, 10AM UTC</p>
                         </div>
                     </div>
 
                     <div className="row justify-content-center pt-3">
                         <div className="col-md-10 col-lg-9">
-                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Date</h2>
+                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Public Mint</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 5, 2024 – own a piece of digital art history.</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 6, 2024, 10AM UTC</p>
                         </div>
                     </div>
                 </div>
@@ -372,16 +380,120 @@ function Home(props) {
                 </div>
             </div>
 
-            {/* Roadmap and Future Plans */}
+            {/* Roadmap */}
             <div className="bg-color-6 position-relative py-5">
                 <div className="position-absolute invisible" id="roadmap" style={{"top":"-86px"}}></div>
 
                 <div className="container py-5">
-                    <div className="row justify-content-center">
-                        <div className="col-md-10 col-lg-9">
-                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Roadmap and Future Plans</h2>
+                    <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Roadmap</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">The launch on the SEI Network is just the beginning. Plans are in place to expand to other blockchains, increasing accessibility and engagement. Each step of expansion will be accompanied by community-driven events and campaigns, ensuring that the Dragon Meme Coin's journey is as exciting as its destination.</p>
+                    <div className="row font-size-80">
+                        <div className="col-md-6 col-lg-3 lg:tw-mt-[50px] mb-5 mb-lg-0 px-xl-4">
+                            <div className="mb-4 pb-2">
+                                <div className="d-inline-block">
+                                    <div className="bg-color-4 rounded-circle d-flex justify-content-center align-items-center tw-w-[90px] tw-h-[90px]">
+                                        <div className="bebas-neue font-size-260 font-size-lg-300 font-size-xl-340 font-weight-700 text-color-1">1</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul className="fa-ul text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 tw-ms-[29px]">
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Dragon Meme NFT Collections
+                                </li>
+
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    DEX/CEX Listing
+                                </li>
+
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Airdrop Distribution
+                                </li>
+
+                                <li className="mb-0">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    $10M Market Cap
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 lg:tw-mt-[120px] mb-5 mb-lg-0 px-xl-4">
+                            <div className="mb-4 pb-2">
+                                <div className="d-inline-block">
+                                    <div className="bg-color-4 rounded-circle d-flex justify-content-center align-items-center tw-w-[90px] tw-h-[90px]">
+                                        <div className="bebas-neue font-size-260 font-size-lg-300 font-size-xl-340 font-weight-700 text-color-1">2</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul className="fa-ul text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 tw-ms-[29px]">
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Integration of DEFI Projects
+                                </li>
+
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Launching on other blockchains (Celestia, Arbitrum, Mantra Network, etc)
+                                </li>
+
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Launching of staking and LP rewards
+                                </li>
+
+                                <li className="mb-0">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    $50M Market Cap
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 mb-5 mb-lg-0 px-xl-4">
+                            <div className="mb-4 pb-2">
+                                <div className="d-inline-block">
+                                    <div className="bg-color-4 rounded-circle d-flex justify-content-center align-items-center tw-w-[90px] tw-h-[90px]">
+                                        <div className="bebas-neue font-size-260 font-size-lg-300 font-size-xl-340 font-weight-700 text-color-1">3</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul className="fa-ul text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 tw-ms-[29px]">
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Independence - Launching of Meme Sector Specific Chain
+                                </li>
+
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Dragon Meme Network
+                                </li>
+
+                                <li className="mb-0">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    $100M Market Cap
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="col-md-6 col-lg-3 lg:tw-mt-[200px] mb-0 px-xl-4">
+                            <div className="mb-4 pb-2">
+                                <div className="d-inline-block">
+                                    <div className="bg-color-4 rounded-circle d-flex justify-content-center align-items-center tw-w-[90px] tw-h-[90px]">
+                                        <div className="bebas-neue font-size-260 font-size-lg-300 font-size-xl-340 font-weight-700 text-color-1">4</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <ul className="fa-ul text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 tw-ms-[29px]">
+                                <li className="mb-0">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Pump, Pump, Pump, Pump the Dragon to the Moon.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
