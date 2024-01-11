@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
 
 // images
 import icon from '../../img/logo.png';
@@ -7,14 +7,64 @@ import telegram from '../../img/telegram.png';
 import etherscan from '../../img/etherscan.png';
 import tokenomics from '../../img/tokenomics.png';
 
-function Home(props) {
-    useEffect(function() {
+import nft0 from '../../img/nft/0.webp';
+import nft1 from '../../img/nft/1.webp';
+import nft2 from '../../img/nft/2.webp';
+import nft3 from '../../img/nft/3.webp';
+import nft4 from '../../img/nft/4.webp';
+import nft5 from '../../img/nft/5.webp';
+import nft6 from '../../img/nft/6.webp';
+import nft7 from '../../img/nft/7.webp';
+import nft8 from '../../img/nft/8.webp';
+import nft9 from '../../img/nft/9.webp';
+import nft10 from '../../img/nft/10.webp';
+import nft11 from '../../img/nft/11.webp';
+import nft12 from '../../img/nft/12.webp';
+import nft13 from '../../img/nft/13.webp';
+import nft14 from '../../img/nft/14.webp';
+import nft15 from '../../img/nft/15.webp';
+import nft16 from '../../img/nft/16.webp';
+import nft17 from '../../img/nft/17.webp';
+import nft18 from '../../img/nft/18.webp';
+import nft19 from '../../img/nft/19.webp';
 
-    });
+function Home(props) {
+    const nfts = [nft0, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, nft17, nft18, nft19];
+
+    const [shownNFT1, setShownNFT1] = useState(Math.floor(Math.random() * 20));
+    const [shownNFT2, setShownNFT2] = useState(Math.floor(Math.random() * 20));
+    const [shownNFT3, setShownNFT3] = useState(Math.floor(Math.random() * 20));
+
+    const updateNFT = () => {
+        let random1 = Math.floor(Math.random() * 20);
+        let random2 = Math.floor(Math.random() * 20);
+        let random3 = Math.floor(Math.random() * 20);
+
+        while(random1 === random2) {
+            random2 = Math.floor(Math.random() * 20);
+            console.log(random1, random2)
+        }
+
+        while(random2 === random3) {
+            random3 = Math.floor(Math.random() * 20);
+        }
+
+        setShownNFT1(random1);
+        setShownNFT2(random2);
+        setShownNFT3(random3);
+
+        setTimeout(function() {
+            updateNFT();
+        }, 2000);
+    };
+
+    useEffect(function() {
+        updateNFT();
+    }, []);
 
     return (
         <div className="home bg-white">
-            {/* Navbar*/}
+            {/* Navbar */}
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-color-3">
                 <div className="container">
                     <a className="navbar-brand d-flex align-items-center" href="https://dragonmemetoken.github.io">
@@ -45,7 +95,7 @@ function Home(props) {
                 </div>
             </nav>
 
-            {/* Header */}
+            {/* Hero */}
             <div className="bg-color-4" id="home" style={{"paddingTop":"86px", "minHeight":"calc(100vh - 86px)"}}>
                 <div className="container">
                     <div className="row align-items-center py-4 py-md-5 py-xl-3" style={{"minHeight":"calc(100vh - 86px)"}}>
@@ -91,6 +141,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* Concept and Vision  */}
             <div className="bg-color-6 position-relative py-5">
                 <div className="position-absolute invisible" id="about" style={{"top":"-86px"}}></div>
 
@@ -105,6 +156,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* Technical Foundation */}
             <div className="container py-5 position-relative">
                 <div className="position-absolute invisible" id="about" style={{"top":"-86px"}}></div>
 
@@ -131,6 +183,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* Community Engagement */}
             <div className="bg-color-3">
                 <div className="container py-5 position-relative">
                     <div className="position-absolute invisible" id="about" style={{"top":"-86px"}}></div>
@@ -138,7 +191,7 @@ function Home(props) {
                     <div className="container py-5">
                         <div className="row align-items-center">
                             <div className="col-lg-7 pe-lg-5 order-1 order-lg-0">
-                                <h2 className="bebas-neue text-color-1 text-center text-lg-start font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Community Engagement:</h2>
+                                <h2 className="bebas-neue text-color-1 text-center text-lg-start font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Community Engagement</h2>
 
                                 <p className="text-center text-lg-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Dragon Meme Coin isn't just a token; it's a movement. The team behind it is committed to fostering a vibrant, engaged community. Through social media campaigns, meme contests, and collaborative events, Dragon Meme Coin creates an inclusive environment where creativity and humor are celebrated. This approach is designed to resonate with the meme community, leveraging the power of viral content to amplify its presence.</p>
                             </div>
@@ -159,6 +212,102 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* NFT */}
+            <div className="bg-color-4 position-relative py-5">
+                <div className="position-absolute invisible" id="tokenomics" style={{"top":"-86px"}}></div>
+
+                <div className="container py-5">
+                    <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">DragonMeme NFT Collection</h2>
+
+                    <div className="row px-2 mb-5">
+                        <div className="col-6 col-md-4 px-2">
+                            <div className="position-relative">
+                                {nfts.map((nft, index) => (
+                                    <div key={index} className="position-absolute tw-top-[0] tw-left-[0] px-lg-3 px-xl-4">
+                                        <img src={nft} className={'w-100 ' + ((shownNFT1 === index) ? 'tw-opacity-[1]' : 'tw-opacity-[0]')} style={{transition:'500ms'}} alt={index} />
+                                    </div>
+                                ))}
+
+                                <div className="invisible">
+                                    <img src={nft1} className={'w-100 shownNFT1'} alt="DragonMeme" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-6 col-md-4 px-2">
+                            <div className="position-relative">
+                                {nfts.map((nft, index) => (
+                                    <div key={index} className="position-absolute tw-top-[0] tw-left-[0] px-lg-3 px-xl-4">
+                                        <img src={nft} className={'w-100 ' + ((shownNFT2 === index) ? 'tw-opacity-[1]' : 'tw-opacity-[0]')} style={{transition:'500ms'}} alt={index} />
+                                    </div>
+                                ))}
+
+                                <div className="invisible">
+                                    <img src={nft1} className={'w-100'} alt="DragonMeme" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-6 col-md-4 px-2 d-none d-md-block">
+                            <div className="position-relative">
+                                {nfts.map((nft, index) => (
+                                    <div key={index} className="position-absolute tw-top-[0] tw-left-[0] px-lg-3 px-xl-4">
+                                        <img src={nft} className={'w-100 ' + ((shownNFT3 === index) ? 'tw-opacity-[1]' : 'tw-opacity-[0]')} style={{transition:'500ms'}} alt={index} />
+                                    </div>
+                                ))}
+
+                                <div className="invisible">
+                                    <img src={nft1} className={'w-100'} alt="DragonMeme" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row px-2 mb-5">
+                        <div className="col-lg-6 mb-4 mb-lg-0 px-2">
+                            <div className="px-lg-3 px-xl-4">
+                                <div className="bg-color-3 py-5 px-4 px-md-5">
+                                    <div className="font-size-120">
+                                        <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-4 fw-bold">Whitelist Giveaways</p>
+                                    </div>
+
+                                    <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Gain exclusive access as a valued community member. Join our Whitelist Giveaways to stay ahead in the dynamic world of NFTs!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 mb-0 px-2">
+                            <div className="px-lg-3 px-xl-4">
+                                <div className="bg-color-3 p-5">
+                                    <div className="font-size-120">
+                                        <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-4 fw-bold">Community Partnerships</p>
+                                    </div>
+
+                                    <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Collaborate with us to enrich our NFT ecosystem. Embrace the synergy of partnerships in our ever-evolving NFT community!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row justify-content-center pt-3 mb-5">
+                        <div className="col-md-10 col-lg-9">
+                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Price</h2>
+
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">30 SEI, balancing artistry and value.</p>
+                        </div>
+                    </div>
+
+                    <div className="row justify-content-center pt-3">
+                        <div className="col-md-10 col-lg-9">
+                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Date</h2>
+
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 5, 2024 – own a piece of digital art history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Tokenomics */}
             <div className="bg-white position-relative py-5">
                 <div className="position-absolute invisible" id="tokenomics" style={{"top":"-86px"}}></div>
 
@@ -223,6 +372,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* Roadmap and Future Plans */}
             <div className="bg-color-6 position-relative py-5">
                 <div className="position-absolute invisible" id="roadmap" style={{"top":"-86px"}}></div>
 
@@ -237,6 +387,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* CTA */}
             <div className="bg-color-4 position-relative py-5">
                 <div className="position-absolute invisible" style={{"top":"-86px"}}></div>
 
@@ -253,6 +404,7 @@ function Home(props) {
                 </div>
             </div>
 
+            {/* Contact Us */}
             <div className="bg-color-3 py-5 position-relative">
                 <div className="position-absolute invisible" id="contact" style={{"top":"-102px"}}></div>
 
