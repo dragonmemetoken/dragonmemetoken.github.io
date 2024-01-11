@@ -67,7 +67,7 @@ function Home(props) {
             {/* Navbar */}
             <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-color-3">
                 <div className="container">
-                    <a className="navbar-brand d-flex align-items-center" href="https://dragonmemetoken.github.io">
+                    <a className="navbar-brand d-flex align-items-center" href="https://dragonmeme.io">
                         <img src={icon} alt="Dragon Meme" width={60} />
                         <p className="bebas-neue ps-4 mb-0 font-size-170" style={{letterSpacing: '0.05em'}}>DRAGON MEME</p>
                     </a>
