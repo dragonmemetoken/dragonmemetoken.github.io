@@ -87,6 +87,9 @@ function Home(props) {
                             {/*    <a className="nav-link text-white font-size-110" href="#howtobuy">How To Buy</a>*/}
                             {/*</li>*/}
                             <li className="nav-item font-size-90 font-size-xl-100 px-2 px-xl-3">
+                                <a className="nav-link text-white font-size-110" href="#nft">NFT Collection</a>
+                            </li>
+                            <li className="nav-item font-size-90 font-size-xl-100 px-2 px-xl-3">
                                 <a className="nav-link text-white font-size-110" href="#tokenomics">Tokenomics</a>
                             </li>
                             <li className="nav-item font-size-90 font-size-xl-100 px-2 px-xl-3 mb-2 mb-lg-0">
@@ -220,7 +223,7 @@ function Home(props) {
 
             {/* NFT */}
             <div className="bg-color-4 position-relative py-5">
-                <div className="position-absolute invisible" id="tokenomics" style={{"top":"-86px"}}></div>
+                <div className="position-absolute invisible" id="nft" style={{"top":"-86px"}}></div>
 
                 <div className="container py-5">
                     <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">DragonMeme NFT Collection</h2>
