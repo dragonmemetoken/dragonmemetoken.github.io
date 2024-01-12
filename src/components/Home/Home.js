@@ -5,7 +5,7 @@ import icon from '../../img/logo.png';
 import twitter from '../../img/twitter.png';
 import telegram from '../../img/telegram.png';
 // import etherscan from '../../img/etherscan.png';
-// import tokenomics from '../../img/tokenomics.png';
+import tokenomics from '../../img/tokenomics.png';
 
 import nft0 from '../../img/nft/0.webp';
 import nft1 from '../../img/nft/1.webp';
@@ -322,7 +322,52 @@ function Home(props) {
                 <div className="container py-5">
                     <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Tokenomics</h2>
 
+                    <div className="row justify-content-center align-items-center mb-5">
+                        <div className="col-md-6">
+                            <img src={tokenomics} className="w-100" alt="Dragon Meme"/>
+                        </div>
+
+                        <div className="col-md-6 mb-5">
+                            <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-5">Total and Max Supply: 100,000,000,000,000</p>
+
+                            <ul className="fa-ul text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 tw-ms-[29px] mb-5">
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Marketing: 15%
+                                </li>
+                                <li className="mb-2">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Airdrop: 35%
+                                </li>
+                                <li className="mb-0">
+                                    <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                    Liquidity: 50%
+                                </li>
+                            </ul>
+
+                            <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Fair Launch, No Presale, No Team Tokens, LP Locked</p>
+                        </div>
+                    </div>
+
                     <div className="row font-size-80">
+                        <div className="col-lg-4 mb-5 mb-lg-0 px-4">
+                            <div className="row justify-content-center">
+                                <div className="col-9 col-sm-5 col-md-4 col-lg-9 col-xl-7 mb-5">
+                                    <div className="bg-color-4 rounded-circle position-relative" style={{paddingTop: '100%'}}>
+                                        <div className="d-flex align-items-center justify-content-center position-absolute w-100 h-100" style={{top: '0', bottom:'0'}}>
+                                            <i className="fa-solid fa-megaphone text-color-1 font-size-500"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="font-size-120">
+                                    <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-4 fw-bold">Marketing</p>
+                                </div>
+
+                                <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Our marketing strategy focuses on expanding our token's reach and fostering widespread adoption. Through targeted campaigns and community initiatives, we aim to attract new users and maintain active engagement with our existing base.</p>
+                            </div>
+                        </div>
+
                         <div className="col-lg-4 mb-5 mb-lg-0 px-4">
                             <div className="row justify-content-center">
                                 <div className="col-9 col-sm-5 col-md-4 col-lg-9 col-xl-7 mb-5">
@@ -341,7 +386,7 @@ function Home(props) {
                             </div>
                         </div>
 
-                        <div className="col-lg-4 mb-5 mb-lg-0 px-4">
+                        <div className="col-lg-4 px-4">
                             <div className="row justify-content-center">
                                 <div className="col-9 col-sm-5 col-md-4 col-lg-9 col-xl-7 mb-5">
                                     <div className="bg-color-4 rounded-circle position-relative" style={{paddingTop: '100%'}}>
@@ -356,24 +401,6 @@ function Home(props) {
                                 </div>
 
                                 <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">We allocate a significant portion of tokens to ensure strong liquidity, facilitating stable and efficient market transactions. This commitment to liquidity minimizes price volatility and builds user confidence in our token.</p>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 px-4">
-                            <div className="row justify-content-center">
-                                <div className="col-9 col-sm-5 col-md-4 col-lg-9 col-xl-7 mb-5">
-                                    <div className="bg-color-4 rounded-circle position-relative" style={{paddingTop: '100%'}}>
-                                        <div className="d-flex align-items-center justify-content-center position-absolute w-100 h-100" style={{top: '0', bottom:'0'}}>
-                                            <i className="fa-solid fa-megaphone text-color-1 font-size-500"></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="font-size-120">
-                                    <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-4 fw-bold">Marketing</p>
-                                </div>
-
-                                <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Our marketing strategy focuses on expanding our token's reach and fostering widespread adoption. Through targeted campaigns and community initiatives, we aim to attract new users and maintain active engagement with our existing base.</p>
                             </div>
                         </div>
                     </div>
