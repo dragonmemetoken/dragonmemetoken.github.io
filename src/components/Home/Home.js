@@ -344,6 +344,21 @@ function Home(props) {
                                 <li className="mb-2">
                                     <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
                                     Airdrop: 35%
+
+                                    <ul className="fa-ul text-color-1 font-size-70 tw-ms-[29px] mb-1 mt-2">
+                                        <li className="mb-2">
+                                            <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                            Dragon NFT Collections: 21%
+                                        </li>
+                                        <li className="mb-2">
+                                            <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                            SEI NFT PROJECTS: 7%
+                                        </li>
+                                        <li className="mb-0">
+                                            <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
+                                            SEI STAKERS: 7%
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="mb-0">
                                     <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
