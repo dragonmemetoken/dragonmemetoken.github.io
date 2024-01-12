@@ -27,6 +27,7 @@ import nft16 from '../../img/nft/16.webp';
 import nft17 from '../../img/nft/17.webp';
 import nft18 from '../../img/nft/18.webp';
 import nft19 from '../../img/nft/19.webp';
+import {Modal} from "react-bootstrap";
 
 function Home(props) {
     const nfts = [nft0, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, nft17, nft18, nft19];
@@ -56,6 +57,10 @@ function Home(props) {
             updateNFT();
         }, 2000);
     };
+
+    const [showModalLaunch, setShowModalLaunch] = useState(false);
+    const handleCloseModalLaunch = () => setShowModalLaunch(false);
+    const handleShowModalLaunch = () => setShowModalLaunch(true);
 
     useEffect(function() {
         updateNFT();
@@ -88,7 +93,8 @@ function Home(props) {
                                 <a className="nav-link text-white font-size-110" href="#roadmap">Roadmap</a>
                             </li>
                             <li className="nav-item font-size-90 font-size-xl-100 px-2 ps-xl-3">
-                                <a className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" href="https://coinhall.org/sei" target="_blank" rel="noreferrer">BUY $DRAGONMEME</a>
+                                <button className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" onClick={handleShowModalLaunch}>BUY $DRAGONMEME</button>
+                                {/*<a className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" href="https://coinhall.org/sei" target="_blank" rel="noreferrer">BUY $DRAGONMEME</a>*/}
                             </li>
                         </ul>
                     </div>
@@ -586,6 +592,20 @@ function Home(props) {
                     </div>
                 </div>
             </div>
+
+            <Modal show={showModalLaunch} onHide={handleCloseModalLaunch} className="" centered>
+                <div className="modal-body position-relative p-5 border-0 bg-color-4">
+                    <div className="position-absolute tw-top-[20px] tw-right-[12px]">
+                        <i className="fa-light fa-times text-color-1 font-size-150 cursor-pointer px-2" onClick={handleCloseModalLaunch}></i>
+                    </div>
+
+                    <p className="text-center text-color-1 mb-4">Get ready, the Dragon Meme Token is about to make its grand entrance into the crypto universe - the launch is almost here!</p>
+
+                    <div className="text-center">
+                        <a href="https://t.me/DragonMeme2024" target="_blank" rel="noreferrer" className="btn btn-custom-1 px-5 py-2 mx-1">Join Our Community</a>
+                    </div>
+                </div>
+            </Modal>
         </div>
     )
 }
