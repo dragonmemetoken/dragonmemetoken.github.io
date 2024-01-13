@@ -96,7 +96,7 @@ function Home(props) {
                                 <a className="nav-link text-white font-size-110" href="#roadmap">Roadmap</a>
                             </li>
                             <li className="nav-item font-size-90 font-size-xl-100 px-2 ps-xl-3">
-                                <button className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" onClick={handleShowModalLaunch}>BUY $DRAGONMEME</button>
+                                <button className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" onClick={handleShowModalLaunch}>BUY $DMEME</button>
                                 {/*<a className="nav-link text-white font-size-90 btn-custom-1 px-4 text-center" href="https://coinhall.org/sei" target="_blank" rel="noreferrer">BUY $DRAGONMEME</a>*/}
                             </li>
                         </ul>
@@ -302,7 +302,8 @@ function Home(props) {
                         <div className="col-md-10 col-lg-9">
                             <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Price</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">30 SEI</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">30 SEI</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">80% of the proceeds will be designated for liquidity provision of $DMEME token, with the remaining 20% earmarked for marketing, promotions, and development.</p>
                         </div>
                     </div>
 
@@ -585,7 +586,7 @@ function Home(props) {
 
                         <div className="col-md-6">
                             <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">Got questions or need help? Contact us:</p>
-                            <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">Email: <a href="mailto:support@dragonmeme.io" className="montreuxjs-xbd link-color-1">support@dragonmeme.io</a></p>
+                            {/*<p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">Email: <a href="mailto:support@dragonmeme.io" className="montreuxjs-xbd link-color-1">support@dragonmeme.io</a></p>*/}
                             <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">Twitter: <a href="https://twitter.com/Dragonmeme2024" target="_blank" rel="noreferrer" className="montreuxjs-xbd link-color-1">@DragonMeme2024</a></p>
                             <p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-5 pb-4">Telegram: <a href="https://t.me/DragonMeme2024" target="_blank" rel="noreferrer" className="montreuxjs-xbd link-color-1">https://t.me/DragonMeme2024</a></p>
                             {/*<p className="text-center text-md-start text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-5 pb-4" style={{"wordBreak":"break-word"}}>Find contract info here:<br/> <a href="https://etherscan.io/token/0x54d8517985e74d5708fe45621c8e945c9e4218b9" target="_blank" rel="noreferrer" className="font-size-90 link-color-1">0x54d8517985e74d5708fe45621c8e945c9e4218b9</a></p>*/}
@@ -606,6 +607,22 @@ function Home(props) {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* CTA */}
+            <div className="bg-color-4 position-relative py-5">
+                <div className="position-absolute invisible" style={{"top":"-86px"}}></div>
+
+                <div className="container py-5">
+                    <div className="row justify-content-center">
+                        <div className="col-md-10 col-lg-9">
+                            <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Important Notice</h2>
+
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-5">Please be aware that Dragon Meme Coin is a digital asset created purely for entertainment purposes. It is a memecoin, which means it is inspired by internet memes and carries a humorous, light-hearted nature.</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Remember, your decision to engage with Dragon Meme Coin should be based on your personal entertainment and educational considerations, not as a financial investment strategy. Stay informed and cautious.</p>
                         </div>
                     </div>
                 </div>
