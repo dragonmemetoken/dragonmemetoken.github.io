@@ -573,7 +573,7 @@ function Home(props) {
                 <div className="position-absolute invisible" id="contact" style={{"top":"-102px"}}></div>
 
                 <div className="container py-5">
-                    <h2 className="bebas-neue text-center text-md-start text-color-1 font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Contact</h2>
+                    <h2 className="bebas-neue text-center text-color-1 font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">Contact</h2>
 
                     <div className="row align-items-center">
                         <div className="col-md-6 pe-md-5">
