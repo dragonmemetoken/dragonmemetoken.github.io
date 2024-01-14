@@ -302,8 +302,11 @@ function Home(props) {
                         <div className="col-md-10 col-lg-9">
                             <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Mint Price</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">30 SEI</p>
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">80% of the proceeds will be designated for liquidity provision of $DMEME token, with the remaining 20% earmarked for marketing, promotions, and development.</p>
+                            <div className="font-size-120">
+                                <p className="text-center fw-bold text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-3">FREE</p>
+                            </div>
+
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">Experience free minting and be among the first to mint NFTs on the new Sei Network!</p>
                         </div>
                     </div>
 
@@ -352,15 +355,15 @@ function Home(props) {
                                     <ul className="fa-ul text-color-1 font-size-70 tw-ms-[29px] mb-1 mt-2">
                                         <li className="mb-2">
                                             <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
-                                            Dragon NFT Collections: 21%
+                                            Dragon NFT Collections: 15%
                                         </li>
                                         <li className="mb-2">
                                             <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
-                                            SEI NFT PROJECTS: 7%
+                                            SEI NFT PROJECTS: 10%
                                         </li>
                                         <li className="mb-0">
                                             <span className="fa-li"><i className="fa-solid fa-egg"></i></span>
-                                            SEI STAKERS: 7%
+                                            SEI STAKERS: 10%
                                         </li>
                                     </ul>
                                 </li>
