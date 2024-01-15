@@ -228,7 +228,9 @@ function Home(props) {
                 <div className="container py-5">
                     <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-5">DragonMeme NFT Collection</h2>
 
-                    <div className="row px-2 mb-5">
+                    <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-5 pb-4">Introducing the Dragon Meme NFT Collection: A unique and whimsical world of 5,000 cute yet fierce dragons, exclusively launching on the SEI Network. Each dragon boasts its own quirky personality and meme-worthy style, ensuring no two are alike. As a special perk, NFT holders will be treated to an airdrop of $DMEME tokens, the official memecoin of the project. Dive into a fun-filled realm where fantasy meets meme culture, and each dragon is not just a collectible, but a ticket to an exhilarating and meme-tastic adventure!</p>
+
+                    <div className="row px-2 mb-5 pb-4 pb-lg-0">
                         <div className="col-6 col-md-4 px-2">
                             <div className="position-relative">
                                 {nfts.map((nft, index) => (
