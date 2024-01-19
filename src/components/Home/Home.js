@@ -7,46 +7,31 @@ import telegram from '../../img/telegram.png';
 // import etherscan from '../../img/etherscan.png';
 import tokenomics from '../../img/tokenomics.png';
 
-import nft0 from '../../img/nft/0.webp';
-import nft1 from '../../img/nft/1.webp';
-import nft2 from '../../img/nft/2.webp';
-import nft3 from '../../img/nft/3.webp';
-import nft4 from '../../img/nft/4.webp';
-import nft5 from '../../img/nft/5.webp';
-import nft6 from '../../img/nft/6.webp';
-import nft7 from '../../img/nft/7.webp';
-import nft8 from '../../img/nft/8.webp';
-import nft9 from '../../img/nft/9.webp';
-import nft10 from '../../img/nft/10.webp';
-import nft11 from '../../img/nft/11.webp';
-import nft12 from '../../img/nft/12.webp';
-import nft13 from '../../img/nft/13.webp';
-import nft14 from '../../img/nft/14.webp';
-import nft15 from '../../img/nft/15.webp';
-import nft16 from '../../img/nft/16.webp';
-import nft17 from '../../img/nft/17.webp';
-import nft18 from '../../img/nft/18.webp';
-import nft19 from '../../img/nft/19.webp';
 import {Modal} from "react-bootstrap";
 
 function Home(props) {
-    const nfts = [nft0, nft1, nft2, nft3, nft4, nft5, nft6, nft7, nft8, nft9, nft10, nft11, nft12, nft13, nft14, nft15, nft16, nft17, nft18, nft19];
+    let nfts = [];
+    let nftsLength = 50;
 
-    const [shownNFT1, setShownNFT1] = useState(Math.floor(Math.random() * 20));
-    const [shownNFT2, setShownNFT2] = useState(Math.floor(Math.random() * 20));
-    const [shownNFT3, setShownNFT3] = useState(Math.floor(Math.random() * 20));
+    for(let i = 0; i < nftsLength; i++) {
+        nfts.push("https://ownlyio.sgp1.cdn.digitaloceanspaces.com/dragonmeme/assets/" + i + ".png");
+    }
+
+    const [shownNFT1, setShownNFT1] = useState(Math.floor(Math.random() * 30));
+    const [shownNFT2, setShownNFT2] = useState(Math.floor(Math.random() * 30));
+    const [shownNFT3, setShownNFT3] = useState(Math.floor(Math.random() * 30));
 
     const updateNFT = () => {
-        let random1 = Math.floor(Math.random() * 20);
-        let random2 = Math.floor(Math.random() * 20);
-        let random3 = Math.floor(Math.random() * 20);
+        let random1 = Math.floor(Math.random() * nftsLength);
+        let random2 = Math.floor(Math.random() * nftsLength);
+        let random3 = Math.floor(Math.random() * nftsLength);
 
         while(random1 === random2) {
-            random2 = Math.floor(Math.random() * 20);
+            random2 = Math.floor(Math.random() * nftsLength);
         }
 
         while(random2 === random3) {
-            random3 = Math.floor(Math.random() * 20);
+            random3 = Math.floor(Math.random() * nftsLength);
         }
 
         setShownNFT1(random1);
@@ -240,7 +225,7 @@ function Home(props) {
                                 ))}
 
                                 <div className="invisible">
-                                    <img src={nft1} className={'w-100 shownNFT1'} alt="DragonMeme" />
+                                    <img src={nfts[0]} className={'w-100 shownNFT1'} alt="DragonMeme" />
                                 </div>
                             </div>
                         </div>
@@ -254,7 +239,7 @@ function Home(props) {
                                 ))}
 
                                 <div className="invisible">
-                                    <img src={nft1} className={'w-100'} alt="DragonMeme" />
+                                    <img src={nfts[0]} className={'w-100'} alt="DragonMeme" />
                                 </div>
                             </div>
                         </div>
@@ -268,7 +253,7 @@ function Home(props) {
                                 ))}
 
                                 <div className="invisible">
-                                    <img src={nft1} className={'w-100'} alt="DragonMeme" />
+                                    <img src={nfts[0]} className={'w-100'} alt="DragonMeme" />
                                 </div>
                             </div>
                         </div>
