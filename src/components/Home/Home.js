@@ -301,7 +301,7 @@ function Home(props) {
                         <div className="col-md-10 col-lg-9">
                             <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Whitelist Mint</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 9, 2024, 10AM UTC</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 19, 2024, 10AM UTC</p>
                         </div>
                     </div>
 
@@ -309,7 +309,7 @@ function Home(props) {
                         <div className="col-md-10 col-lg-9">
                             <h2 className="bebas-neue text-color-1 text-center font-size-260 font-size-sm-270 font-size-md-270 font-size-lg-300 font-size-xl-330 mb-3">Public Mint</h2>
 
-                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 10, 2024, 10AM UTC</p>
+                            <p className="text-center text-color-1 font-size-120 font-size-sm-120 font-size-md-120 font-size-lg-130 font-size-xl-140 mb-0">February 20, 2024, 10AM UTC</p>
                         </div>
                     </div>
                 </div>
